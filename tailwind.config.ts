@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'midnight-blue': '#0a1f44',
+        'bright-cyan': '#00bcd4',
+        'electric-green': '#00ff7f',
       },
     },
   },
