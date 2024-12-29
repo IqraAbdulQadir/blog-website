@@ -23,13 +23,7 @@ const BlogPage = async () => {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {blogs.map((blog: Blog) => (
   <div key={blog.slug.current} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
-    {blog.image && (
-      <img
-        src={blog.image}
-        alt={blog.name}
-        className="w-full h-48 object-cover rounded-t-lg mb-4"
-      />
-    )}
+    
     <h3 className="text-xl font-bold text-[#333333] mb-4">{blog.name}</h3>
     <p className="text-[#2f4f4f] text-sm mb-4">
       <span>{blog.author}</span> | <span>{new Date(blog.publishedAt).toLocaleDateString()}</span>
